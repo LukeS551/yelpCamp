@@ -1,13 +1,15 @@
-const express = require ('express');
-const app = express();
+const express = require("express");
+const http = require('http');
+const hostname = '127.0.0.1';
 const port = 3000;
-
-app.get('/', function(req, res)
-{
-    res.render("landing                         ");
+var app = express();
+app.get('/', function(req, res){
+    res.send("this will be the landing page soon!");
 });
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
-// app.listen(process.env.PORT, process.env.ip, function(){
-//     console.log('yelpcamp server has started');
+app.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+  });
+// app.listen(process.env.Port, process.env.IP, function(){
+//     console.log('yelpcamp begun');
 // });
