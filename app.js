@@ -13,8 +13,11 @@ app.get('/', function(req, res){
 });
 app.use(express.static('resources'));
     const locations = [
-        {name: "Auckland", image: "/images//dan-freeman-hIKVSVKH7No-unsplash.jpg" },
+        {name: "Auckland", image: "/images/dan-freeman-hIKVSVKH7No-unsplash.jpg" },
         {name: "Matamata", image: "/images/andres-iga-7XKkJVw1d8c-unsplash.jpg" },
+        {name: "Canterbury", image: "/images/ethan-dow-NjTzNQc5m1w-unsplash.jpg" },
+        {name: "Tauranga", image: "/images/roell-de-ram-2DM7eOR5iyc-unsplash.jpg" },
+        {name: "Tongariro", image: "/images/thomas-schweighofer-AjRxpTzZ-SU-unsplash.jpg" },
     ]
 app.get("/locations", function(req, res){
 
